@@ -46,14 +46,14 @@ const Dynamic: NextPage = (props:{
         <Col>
           <h3>
             Gerado no servidor:
-            <p>{props.serverSideData?.formattedTimestamp}</p>
+            <p>{props.serverSideData?.timestamp.toString()}</p>
           </h3>
         </Col>
 
         <Col>
           <h3>
             Gerado no cliente:
-            <p>{clientSideData?.formattedTimestamp}</p>
+            <p>{clientSideData?.timestamp.toString()}</p>
           </h3>
         </Col>
       </Row>
