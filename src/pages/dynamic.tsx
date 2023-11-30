@@ -1,11 +1,12 @@
 import { GetServerSideProps, NextPage } from "next"
+import { relative } from "path";
 import { ReactNode, useEffect, useState } from "react"
 import { Col, Container, Row } from "reactstrap"
 
 
 
 interface ApiResponse{
-    name:string,
+    name:string,//
     timestamp:Date,
     formattedTimestamp: string;
 }
