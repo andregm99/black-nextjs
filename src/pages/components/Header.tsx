@@ -4,14 +4,14 @@ import { Nav, Navbar } from "reactstrap";
 const Header = () => {
   return (
     <Navbar container="md" color="dark" dark>
-      <Link href="/" passHref>
+      <Link href="/" passHref style={{color:"white",textDecoration:'none'}}>
           Início
       </Link>
       <Nav className="flex-row" navbar>
-        <Link href="/products">
+        <Link href="/products" style={{marginRight:9,color:"white",textDecoration:'none'}}>
             Produtos
         </Link>
-        <Link href="/cart">        
+        <Link href="/cart" style={{color:"white",textDecoration:'none'}}>        
             Carrinho
         </Link>
       </Nav>
